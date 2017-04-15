@@ -1,3 +1,11 @@
+%%%-------------------------------------------------------------------
+%%% Author      : Abhay Jain <abhay-jain@outlook.com>
+%%% File        : epgsql_poolboy.erl
+%%% Created     : 15 Apr 2017
+%%% Description : The supervisor of the epgsql workers, it starts them
+%%%                 and also sprays the queries via poolboy APIs
+%%%-------------------------------------------------------------------
+
 -module(epgsql_poolboy).
 
 -behaviour(application).

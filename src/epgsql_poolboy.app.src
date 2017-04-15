@@ -11,19 +11,19 @@
                 {size, 10},
                 {max_overflow, 20}
             ], [
-                {hostname, "localhost"},
-                {username, "abhayjain"},
-                {database, "mydb"},
-                {password, ""}
+                {hostname, "pgsql_hostname"},
+                {username, "pgsql_username"},
+                {database, "pgsql_database"},
+                {password, "pgsql_password"}
             ]},
             {temporary, [
                 {size, 5},
                 {max_overflow, 10}
             ], [
-                {hostname, "localhost"},
-                {username, "abhayjain"},
-                {database, "mydb"},
-                {password, ""}
+                {hostname, "pgsql_hostname"},
+                {username, "pgsql_username"},
+                {database, "pgsql_database"},
+                {password, "pgsql_password"}
             ]}
         ]}
     ]}

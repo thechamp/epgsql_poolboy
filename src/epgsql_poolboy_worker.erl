@@ -1,3 +1,11 @@
+%%%-------------------------------------------------------------------
+%%% Author      : Abhay Jain <abhay-jain@outlook.com>
+%%% File        : epgsql_poolboy_worker.erl
+%%% Created     : 15 Apr 2017
+%%% Description : The epgsql worker, its instances are spawned to
+%%%                 create pool of pgsql connections.
+%%%-------------------------------------------------------------------
+
 -module(epgsql_poolboy_worker).
 
 -behaviour(gen_server).
