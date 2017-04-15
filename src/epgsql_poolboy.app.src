@@ -1,0 +1,30 @@
+{application, epgsql_poolboy, [
+    {description, "An epgsql poolboy application"},
+    {vsn, "1.0"},
+    {applications, [kernel, stdlib, sasl, crypto, ssl]},
+    {modules, [epgsql_poolboy, epgsql_poolboy_worker]},
+    {registered, [epgsql_poolboy]},
+    {mod, {epgsql_poolboy, []}},
+    {env, [
+        {pools, [
+            {primary, [
+                {size, 10},
+                {max_overflow, 20}
+            ], [
+                {hostname, "localhost"},
+                {username, "abhayjain"},
+                {database, "mydb"},
+                {password, ""}
+            ]},
+            {temporary, [
+                {size, 5},
+                {max_overflow, 10}
+            ], [
+                {hostname, "localhost"},
+                {username, "abhayjain"},
+                {database, "mydb"},
+                {password, ""}
+            ]}
+        ]}
+    ]}
+]}.
